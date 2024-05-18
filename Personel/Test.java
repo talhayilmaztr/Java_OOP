@@ -12,6 +12,12 @@ public class Test {
         
         Employee e3 = e1;
         e1 = e2;
+       
+        Manager m1 = new Manager("Alice", "Brown", 5, 50000, "IT");
+        m1.printInfo();
+        
+        Manager m2 = new Manager("Bob", "White", 30000.0, "HR");
+        m2.printInfo();
 
         // Reference test: Checking the references and hash codes of e1, e2, and e3
         System.out.println(e1.getFirstName());
